@@ -20,12 +20,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, "public")));
+app.use("/static", express.static(path.join(__dirname, "client", "build")));
 app.use(express.static(path.join(__dirname, "client", "build")));
 app.get("/hikes", hike.index);
 app.post("/add_hike", hike.add_hike);
 
 app.get("/", (req, res) => {
-	res.send("just gonna send it");
+	//res.send("just gonna send it");
+	res.json();
 });
 app.get("/flower", (req, res) => {
 	res.json({
