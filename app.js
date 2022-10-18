@@ -9,6 +9,7 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 
 var app = express();
+// TODO add routes, configure db, connect to front end
 app.get("/hikes", hike.index);
 app.post("/add_hike", hike.add_hike);
 
