@@ -27,7 +27,7 @@ app.post("/add_hike", hike.add_hike);
 app.get("/", (req, res) => {
 	res.send("just gonna send it");
 });
-app.get("flower", (req, res) => {
+app.get("/flower", (req, res) => {
 	res.json({
 		name: "Dandelion",
 		colour: "Blue-ish",
