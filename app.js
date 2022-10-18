@@ -10,8 +10,8 @@ var usersRouter = require("./routes/users");
 
 var app = express();
 // TODO add routes, configure db, connect to front end
-app.get("/hikes", hike.index);
-app.post("/add_hike", hike.add_hike);
+//app.get("/hikes", hike.index);
+//app.post("/add_hike", hike.add_hike);
 
 // view engine setup
 //app.set("views", path.join(__dirname, "client", "build"));
@@ -38,8 +38,8 @@ app.use(function (err, req, res, next) {
 	res.locals.error = req.app.get("env") === "development" ? err : {};
 
 	// render the error page
-	res.status(err.status || 500);
-	res.render("error");
+	//res.status(err.status || 500);
+	//res.render("error");
 });
 
 module.exports = app;
