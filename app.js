@@ -24,8 +24,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
+app.get("/", (req, res) => {
+	res.send("just gonna send it");
+});
+app.get("/flower", (req, res) => {
+	res.json({
+		name: "Dandelion",
+		colour: "Blue-ish",
+	});
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
