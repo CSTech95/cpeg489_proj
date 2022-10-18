@@ -1,3 +1,9 @@
+<!--// Place under .ebextensions/staticfiles.config
+
+option_settings:
+  aws:elasticbeanstalk:container:nodejs:staticfiles:
+    /public: /public-->
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
