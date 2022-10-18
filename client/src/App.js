@@ -11,7 +11,7 @@ class App extends Component {
 		this.getFlower();
 	}
 	getFlower() {
-		fetch("/flower")
+		fetch("/")
 			.then((response) => response.json())
 			.then((data) => {
 				this.setState({
