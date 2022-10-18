@@ -14,7 +14,7 @@ app.get("/hikes", hike.index);
 app.post("/add_hike", hike.add_hike);
 
 // view engine setup
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "client", "build"));
 app.set("view engine", "jade");
 
 app.use(logger("dev"));
