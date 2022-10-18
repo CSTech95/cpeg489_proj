@@ -10,8 +10,8 @@ var usersRouter = require("./routes/users");
 
 var app = express();
 // TODO add routes, configure db, connect to front end
-//app.get("/hikes", hike.index);
-//app.post("/add_hike", hike.add_hike);
+app.get("/hikes", hike.index);
+app.post("/add_hike", hike.add_hike);
 
 // view engine setup
 //app.set("views", path.join(__dirname, "views"));
@@ -24,8 +24,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use("/", indexRouter);
-//app.use("/users", usersRouter);
+app.use("/", indexRouter);
+app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
