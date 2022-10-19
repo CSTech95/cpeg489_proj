@@ -25,13 +25,15 @@ app.get("/hikes", hike.index);
 app.post("/add_hike", hike.add_hike);
 
 app.get("/", (req, res) => {
-	res.send("Server Response Displayed");
+	res.send("just gonna send it");
+	res.json();
 });
 app.get("/flower", (req, res) => {
 	res.json({
-		name: "Dandelion",
+		name: "Tulip",
 		colour: "Blue-ish",
 	});
+	//console.log(res.json);
 });
 
 // catch 404 and forward to error handler

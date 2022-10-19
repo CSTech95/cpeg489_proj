@@ -17,6 +17,7 @@ class App extends Component {
 				this.setState({
 					flower: data,
 				});
+				console.log(data);
 			});
 	}
 	render() {
