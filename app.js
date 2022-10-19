@@ -25,7 +25,7 @@ app.get("/hikes", hike.index);
 app.post("/add_hike", hike.add_hike);
 
 app.get("/", (req, res) => {
-	res.send("just gonna send it");
+	res.send("request sent");
 	//res.json();
 });
 app.get("/flower", (req, res) => {
