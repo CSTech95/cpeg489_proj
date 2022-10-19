@@ -41,7 +41,12 @@ class App extends Component {
 									</a>
 								</li>
 								<li>
-									<a href="/new-project" class="text-md font-semibold text-gray-600 hover:text-gray-800">
+									<a href="/find-rentals" class="text-md font-semibold text-gray-600 hover:text-gray-800">
+										Find Rentals
+									</a>
+								</li>
+								<li>
+									<a href="/car-tracker" class="text-md font-semibold text-gray-600 hover:text-gray-800">
 										Car Tracker
 									</a>
 								</li>
