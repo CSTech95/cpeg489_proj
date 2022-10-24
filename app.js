@@ -31,13 +31,13 @@ app.use("/*", (req, res) => {
 //	res.send("request sent");
 //	//res.json();
 //});
-//app.get("/flower", (req, res) => {
-//	res.json({
-//		name: "Tulip",
-//		colour: "Blue-ish",
-//	});
-//console.log(res.json);
-//});
+app.get("/flower", (req, res) => {
+	res.json({
+		name: "Tulip",
+		colour: "Blue-ish",
+	});
+	console.log(res.json);
+});
 
 // catch 404 and forward to error handler
 //app.use(function (req, res, next) {
